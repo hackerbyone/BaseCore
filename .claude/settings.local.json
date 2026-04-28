@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat -ano)",
+      "Bash(dotnet run *)",
+      "PowerShell(Start-Process -FilePath \"dotnet\" -ArgumentList \"run\",\"--no-launch-profile\",\"--project\",\"D:\\\\BaseCore\\\\BaseCore\\\\BaseCore.APIService\\\\BaseCore.APIService.csproj\" -WorkingDirectory \"D:\\\\BaseCore\\\\BaseCore\\\\BaseCore.APIService\" -WindowStyle Hidden; Start-Process -FilePath \"dotnet\" -ArgumentList \"run\",\"--no-launch-profile\",\"--project\",\"D:\\\\BaseCore\\\\BaseCore\\\\BaseCore.AuthService\\\\RobotVibot.AuthService.csproj\" -WorkingDirectory \"D:\\\\BaseCore\\\\BaseCore\\\\BaseCore.AuthService\" -WindowStyle Hidden; Write-Output \"Services starting...\")",
+      "PowerShell(netstat *)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:3000\" -TimeoutSec 10 -UseBasicParsing | Select-Object StatusCode, StatusDescription)",
+      "PowerShell(Start-Process -FilePath \"cmd\" -ArgumentList \"/c cd D:\\\\BaseCore\\\\BaseCore\\\\BaseCore.WebClient && npm run dev\" -WindowStyle Normal; Write-Output \"Starting frontend...\")",
+      "Bash(xargs grep *)",
+      "Bash(dir \"D:\\\\BaseCore\\\\BaseCore\")",
+      "Bash(cd /d)",
+      "Read(//d/vanphongpham-frontend/**)",
+      "Bash(grep -E \"\\\\.cs$\")",
+      "Bash(grep \"\\\\.cs$\")",
+      "Bash(dotnet build *)",
+      "Bash(grep -E \"\\\\.\\(cs|csproj\\)$\")",
+      "Read(//d//**)",
+      "Read(//c/Users//**)",
+      "Bash(grep -E \"\\\\.\\(json|cs\\)$\")",
+      "Bash(xargs basename *)",
+      "Bash(grep -E \"\\\\.csproj|\\\\.cs$\")",
+      "Bash(npm run *)"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "K/wF+AzgzmQ=",
+  "success": false,
+  "projectFilePath": "D:\\Code\\C#\\RobotVibot_WithoutChange-main\\RobotVibot_WithoutChange-main\\RobotVibot.AuditLog\\RobotVibot.AuditLog.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project RobotVibot.LogService is not compatible with netcoreapp2.2 (.NETCoreApp,Version=v2.2). Project RobotVibot.LogService supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "projectPath": "D:\\Code\\C#\\RobotVibot_WithoutChange-main\\RobotVibot_WithoutChange-main\\RobotVibot.AuditLog\\RobotVibot.AuditLog.csproj",
+      "filePath": "D:\\Code\\C#\\RobotVibot_WithoutChange-main\\RobotVibot_WithoutChange-main\\RobotVibot.AuditLog\\RobotVibot.AuditLog.csproj",
+      "libraryId": "RobotVibot.LogService",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
+}
