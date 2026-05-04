@@ -38,12 +38,19 @@ namespace BaseCore.APIService.Controllers
             [FromQuery] string? keyword,
             [FromQuery] int? categoryId,
             [FromQuery] int? manufacturerId,
+            [FromQuery] decimal? minPrice,
+            [FromQuery] decimal? maxPrice,
+            [FromQuery] string? brand,
+            [FromQuery] bool discountOnly = false,
             [FromQuery] int page = 1,
             [FromQuery] int pageSize = 10)
         {
             try
             {
-                var (products, totalCount) = await _productRepository.SearchAsync(keyword, categoryId, manufacturerId, page, pageSize);
+                var (products, totalCount) = await _productRepository.SearchAsync(
+                    keyword, categoryId, manufacturerId,
+                    minPrice, maxPrice, brand,
+                    discountOnly, page, pageSize);
 
                 return Ok(new
                 {

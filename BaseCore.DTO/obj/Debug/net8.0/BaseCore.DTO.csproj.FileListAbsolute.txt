@@ -94,3 +94,4 @@ D:\BaseCore\BaseCore\BaseCore.DTO\obj\Debug\net8.0\refint\BaseCore.DTO.dll
 D:\BaseCore\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.pdb
 D:\BaseCore\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.DTO\obj\Debug\net8.0\ref\BaseCore.DTO.dll
+D:\BaseCore\BaseCore\BaseCore.DTO\obj\Debug\net8.0\BaseCore.DTO.sourcelink.json

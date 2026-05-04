@@ -136,3 +136,4 @@ D:\BaseCore\BaseCore\BaseCore.Entities\obj\Debug\net8.0\refint\BaseCore.Entities
 D:\BaseCore\BaseCore\BaseCore.Entities\obj\Debug\net8.0\BaseCore.Entities.pdb
 D:\BaseCore\BaseCore\BaseCore.Entities\obj\Debug\net8.0\BaseCore.Entities.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.Entities\obj\Debug\net8.0\ref\BaseCore.Entities.dll
+D:\BaseCore\BaseCore\BaseCore.Entities\obj\Debug\net8.0\BaseCore.Entities.sourcelink.json

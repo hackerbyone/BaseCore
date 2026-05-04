@@ -96,3 +96,4 @@ D:\BaseCore\BaseCore\BaseCore.Common\obj\Debug\net8.0\refint\BaseCore.Common.dll
 D:\BaseCore\BaseCore\BaseCore.Common\obj\Debug\net8.0\BaseCore.Common.pdb
 D:\BaseCore\BaseCore\BaseCore.Common\obj\Debug\net8.0\BaseCore.Common.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.Common\obj\Debug\net8.0\ref\BaseCore.Common.dll
+D:\BaseCore\BaseCore\BaseCore.Common\obj\Debug\net8.0\BaseCore.Common.sourcelink.json

@@ -20,7 +20,9 @@
       "Bash(grep -E \"\\\\.\\(json|cs\\)$\")",
       "Bash(xargs basename *)",
       "Bash(grep -E \"\\\\.csproj|\\\\.cs$\")",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(Get-ChildItem -Force)",
+      "Bash(Select-Object Mode, Name)"
     ]
   }
 }

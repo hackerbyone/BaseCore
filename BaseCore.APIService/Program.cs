@@ -73,7 +73,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 // Specific Repository Registration
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<BaseCore.Repository.EFCore.IProductRepository, BaseCore.Repository.EFCore.ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IManufacturerRepository, ManufacturerRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();

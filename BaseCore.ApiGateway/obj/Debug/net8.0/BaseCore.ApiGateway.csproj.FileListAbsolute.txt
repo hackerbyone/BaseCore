@@ -397,3 +397,4 @@ D:\BaseCore\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.pd
 D:\BaseCore\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\ref\BaseCore.ApiGateway.dll
 D:\BaseCore\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\BaseCore\BaseCore\BaseCore.ApiGateway\obj\Debug\net8.0\BaseCore.ApiGateway.sourcelink.json

@@ -182,3 +182,4 @@ D:\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\refint\BaseCore.Reposi
 D:\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.pdb
 D:\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\ref\BaseCore.Repository.dll
+D:\BaseCore\BaseCore\BaseCore.Repository\obj\Debug\net8.0\BaseCore.Repository.sourcelink.json

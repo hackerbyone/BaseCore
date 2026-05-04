@@ -1269,4 +1269,5 @@ D:\BaseCore\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.pd
 D:\BaseCore\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.APIService\obj\Debug\net8.0\ref\BaseCore.APIService.dll
 D:\BaseCore\BaseCore\BaseCore.APIService\bin\Debug\net8.0\BaseCore.APIService.staticwebassets.runtime.json
+D:\BaseCore\BaseCore\BaseCore.APIService\obj\Debug\net8.0\BaseCore.APIService.sourcelink.json
 D:\BaseCore\BaseCore\BaseCore.APIService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -1344,3 +1344,4 @@ D:\BaseCore\BaseCore\BaseCore.AuthService\obj\Debug\net8.0\BaseCore.AuthService.
 D:\BaseCore\BaseCore\BaseCore.AuthService\obj\Debug\net8.0\BaseCore.AuthService.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.AuthService\obj\Debug\net8.0\ref\BaseCore.AuthService.dll
 D:\BaseCore\BaseCore\BaseCore.AuthService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\BaseCore\BaseCore\BaseCore.AuthService\obj\Debug\net8.0\BaseCore.AuthService.sourcelink.json

@@ -152,3 +152,4 @@ D:\BaseCore\BaseCore\BaseCore.Libs\obj\Debug\net8.0\refint\BaseCore.Libs.dll
 D:\BaseCore\BaseCore\BaseCore.Libs\obj\Debug\net8.0\BaseCore.Libs.pdb
 D:\BaseCore\BaseCore\BaseCore.Libs\obj\Debug\net8.0\BaseCore.Libs.genruntimeconfig.cache
 D:\BaseCore\BaseCore\BaseCore.Libs\obj\Debug\net8.0\ref\BaseCore.Libs.dll
+D:\BaseCore\BaseCore\BaseCore.Libs\obj\Debug\net8.0\BaseCore.Libs.sourcelink.json

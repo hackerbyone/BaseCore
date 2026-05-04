@@ -8,7 +8,10 @@ namespace BaseCore.Repository.EFCore
     /// </summary>
     public interface IProductRepository : IRepository<Product>
     {
-        Task<(List<Product> Products, int TotalCount)> SearchAsync(string? keyword, int? categoryId, int? manufacturerId, int page, int pageSize);
+        Task<(List<Product> Products, int TotalCount)> SearchAsync(
+            string? keyword, int? categoryId, int? manufacturerId,
+            decimal? minPrice, decimal? maxPrice, string? brand,
+            bool discountOnly, int page, int pageSize);
         Task<List<Product>> GetByCategoryAsync(int categoryId);
     }
 
@@ -26,7 +29,10 @@ namespace BaseCore.Repository.EFCore
                 .FirstOrDefaultAsync(p => p.Id == (int)id);
         }
 
-        public async Task<(List<Product> Products, int TotalCount)> SearchAsync(string? keyword, int? categoryId, int? manufacturerId, int page, int pageSize)
+        public async Task<(List<Product> Products, int TotalCount)> SearchAsync(
+            string? keyword, int? categoryId, int? manufacturerId,
+            decimal? minPrice, decimal? maxPrice, string? brand,
+            bool discountOnly, int page, int pageSize)
         {
             var query = _dbSet
                 .Include(p => p.Category)
@@ -35,10 +41,10 @@ namespace BaseCore.Repository.EFCore
 
             if (!string.IsNullOrEmpty(keyword))
             {
-                keyword = keyword.ToLower();
+                var kw = keyword.ToLower();
                 query = query.Where(p =>
-                    p.Name.ToLower().Contains(keyword) ||
-                    (p.Description != null && p.Description.ToLower().Contains(keyword)));
+                    p.Name.ToLower().Contains(kw) ||
+                    (p.Description != null && p.Description.ToLower().Contains(kw)));
             }
 
             if (categoryId.HasValue && categoryId > 0)
@@ -46,6 +52,21 @@ namespace BaseCore.Repository.EFCore
 
             if (manufacturerId.HasValue && manufacturerId > 0)
                 query = query.Where(p => p.ManufacturerId == manufacturerId);
+
+            if (minPrice.HasValue)
+                query = query.Where(p => p.Price * (1 - p.DiscountPercent / 100m) >= minPrice.Value);
+
+            if (maxPrice.HasValue)
+                query = query.Where(p => p.Price * (1 - p.DiscountPercent / 100m) <= maxPrice.Value);
+
+            if (!string.IsNullOrWhiteSpace(brand))
+            {
+                var b = brand.ToLower();
+                query = query.Where(p => p.Manufacturer != null && p.Manufacturer.Name.ToLower().Contains(b));
+            }
+
+            if (discountOnly)
+                query = query.Where(p => p.DiscountPercent > 0);
 
             var totalCount = await query.CountAsync();
 

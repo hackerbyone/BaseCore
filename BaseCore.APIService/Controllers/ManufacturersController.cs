@@ -107,7 +107,7 @@ namespace BaseCore.APIService.Controllers
             if (manufacturer == null)
                 return NotFound(new { message = "Không tìm thấy nhà sản xuất" });
 
-            var (products, count) = await _productRepository.SearchAsync(null, null, id, 1, 1);
+            var (products, count) = await _productRepository.SearchAsync(null, null, id, null, null, null, false, 1, 1);
             if (count > 0)
                 return BadRequest(new { message = $"Không thể xóa: còn {count} sản phẩm thuộc nhà sản xuất này" });
 
